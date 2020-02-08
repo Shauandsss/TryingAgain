@@ -5,11 +5,11 @@ const path = require('path')
 function createWindow () {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
-    width: 1920,
-    height: 1080,
+    width: 1000,
+    height: 700,
     frame:false,
     webPreferences: {
-      nodeIntegration: false,
+      nodeIntegration: true,
       preload: path.join(__dirname, 'preload.js')
     }
   })
