@@ -7,13 +7,8 @@
     <link rel ="stylesheet" href="./photon/dist/css/photon.min.css">
     <script src=".\node_modules\jquery\dist/jquery.slim.min.js" onload="window.$ = window.jQuery = module.exports;"></script>
 
-   <!-- <script>window.$ = window.jQuery = require('jquery');</script>-->
+    <script src="./controller.js"></script>
 
-  <script type="text/javascript">
-    $(document).ready(function(){
-      $('.btn-group').hide();
-    });
-  </script>
 
   </head>
   <body>
@@ -46,9 +41,17 @@
             Filters
           </button>
 
-          <button class="btn btn-default btn-dropdown pull-right js-popover-trigger">
-            <span class="icon icon-megaphone"></span>
-          </button>
+          <div class="btn-group pull-right">
+            <button id="btnMinus" class="btn btn-default">
+              <span class="icon icon-minus"></span>
+            </button>
+            <button id="btnPlus" class="btn btn-default">
+              <span class="icon icon-plus"></span>
+            </button>
+            <button id="btnCancel"  class="btn btn-default">
+              <span class="icon icon-cancel"></span>
+            </button>
+          </div>
         </div>
       </header>
 
