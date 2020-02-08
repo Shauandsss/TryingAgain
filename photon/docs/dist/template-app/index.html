@@ -1,57 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <title>Hello World!</title>
+    <title>Photon</title>
 
-    <link rel ="stylesheet" href="./photon/dist/css/photon.min.css">
-    <script src=".\node_modules\jquery\dist/jquery.slim.min.js" onload="window.$ = window.jQuery = module.exports;"></script>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../css/photon.min.css">
 
-   <!-- <script>window.$ = window.jQuery = require('jquery');</script>-->
-
-  <script type="text/javascript">
-    $(document).ready(function(){
-      $('.btn-group').hide();
-    });
-  </script>
-
+    <!-- Javascript -->
+    <script src="js/menu.js" charset="utf-8"></script>
   </head>
   <body>
     <div class="window">
+
+      <!-- .toolbar-header sits at the top of your app -->
       <header class="toolbar toolbar-header">
         <h1 class="title">Photon</h1>
-
-        <div class="toolbar-actions">
-
-          <div class="btn-group">
-            <button class="btn btn-default">
-              <span class="icon icon-home"></span>
-            </button>
-            <button class="btn btn-default">
-              <span class="icon icon-folder"></span>
-            </button>
-            <button class="btn btn-default active">
-              <span class="icon icon-cloud"></span>
-            </button>
-            <button class="btn btn-default">
-              <span class="icon icon-popup"></span>
-            </button>
-            <button class="btn btn-default">
-              <span class="icon icon-shuffle"></span>
-            </button>
-          </div>
-
-          <button class="btn btn-default">
-            <span class="icon icon-home icon-text"></span>
-            Filters
-          </button>
-
-          <button class="btn btn-default btn-dropdown pull-right js-popover-trigger">
-            <span class="icon icon-megaphone"></span>
-          </button>
-        </div>
       </header>
 
+      <!-- Your app's content goes inside .window-content -->
       <div class="window-content">
         <div class="pane-group">
           <div class="pane pane-sm sidebar">
@@ -86,46 +52,8 @@
                 Desktop
               </span>
             </nav>
-
-            <nav class="nav-group">
-              <h5 class="nav-group-title">Tags</h5>
-              <span class="nav-group-item" href="#">
-                <span class="icon icon-record" style="color: rgb(252, 96, 91); --darkreader-inline-color:#f6675f;" data-darkreader-inline-color=""></span>
-                Red
-              </span>
-              <span class="nav-group-item" href="#">
-                <span class="icon icon-record" style="color: rgb(253, 188, 64); --darkreader-inline-color:#fdc04b;" data-darkreader-inline-color=""></span>
-                Orange
-              </span>
-              <span class="nav-group-item" href="#">
-                <span class="icon icon-record" style="color: rgb(52, 200, 74); --darkreader-inline-color:#7bd983;" data-darkreader-inline-color=""></span>
-                Green
-              </span>
-              <span class="nav-group-item" href="#">
-                <span class="icon icon-record" style="color: rgb(87, 172, 245); --darkreader-inline-color:#64b2eb;" data-darkreader-inline-color=""></span>
-                Blue
-              </span>
-            </nav>
-            <nav class="nav-group">
-              <h5 class="nav-group-title">Devices</h5>
-              <span class="nav-group-item">
-                <span class="icon icon-drive"></span>
-                Backup disk
-              </span>
-              <span class="nav-group-item">
-                <span class="icon icon-drive"></span>
-                Backup disk
-              </span>
-              <span class="nav-group-item">
-                <span class="icon icon-drive"></span>
-                Backup disk
-              </span>
-              <span class="nav-group-item">
-                <span class="icon icon-drive"></span>
-                Backup disk
-              </span>
-            </nav>
           </div>
+
           <div class="pane">
             <table class="table-striped">
               <thead>
@@ -251,8 +179,5 @@
         </div>
       </div>
     </div>
-
-    <!-- You can also require other files to run in this process -->
-    <script src="./renderer.js"></script>
   </body>
 </html>

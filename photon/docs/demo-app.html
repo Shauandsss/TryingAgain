@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <title>Hello World!</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Demo App</title>
 
-    <link rel ="stylesheet" href="./photon/dist/css/photon.min.css">
-    <script src=".\node_modules\jquery\dist/jquery.slim.min.js" onload="window.$ = window.jQuery = module.exports;"></script>
+    <!-- Photon.css -->
+    <link rel="stylesheet" href="/dist/css/photon.min.css">
 
-   <!-- <script>window.$ = window.jQuery = require('jquery');</script>-->
-
-  <script type="text/javascript">
-    $(document).ready(function(){
-      $('.btn-group').hide();
-    });
-  </script>
-
+    <style>
+      .window {
+        border-radius: 6px;
+        overflow: hidden;
+      }
+      .sidebar {
+        background-color: #f5f5f4;
+      }
+    </style>
   </head>
   <body>
     <div class="window">
@@ -90,19 +92,19 @@
             <nav class="nav-group">
               <h5 class="nav-group-title">Tags</h5>
               <span class="nav-group-item" href="#">
-                <span class="icon icon-record" style="color: rgb(252, 96, 91); --darkreader-inline-color:#f6675f;" data-darkreader-inline-color=""></span>
+                <span class="icon icon-record" style="color:#fc605b"></span>
                 Red
               </span>
               <span class="nav-group-item" href="#">
-                <span class="icon icon-record" style="color: rgb(253, 188, 64); --darkreader-inline-color:#fdc04b;" data-darkreader-inline-color=""></span>
+                <span class="icon icon-record" style="color:#fdbc40"></span>
                 Orange
               </span>
               <span class="nav-group-item" href="#">
-                <span class="icon icon-record" style="color: rgb(52, 200, 74); --darkreader-inline-color:#7bd983;" data-darkreader-inline-color=""></span>
+                <span class="icon icon-record" style="color:#34c84a"></span>
                 Green
               </span>
               <span class="nav-group-item" href="#">
-                <span class="icon icon-record" style="color: rgb(87, 172, 245); --darkreader-inline-color:#64b2eb;" data-darkreader-inline-color=""></span>
+                <span class="icon icon-record" style="color:#57acf5"></span>
                 Blue
               </span>
             </nav>
@@ -251,8 +253,5 @@
         </div>
       </div>
     </div>
-
-    <!-- You can also require other files to run in this process -->
-    <script src="./renderer.js"></script>
   </body>
 </html>
