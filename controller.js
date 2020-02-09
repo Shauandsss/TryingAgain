@@ -6,17 +6,18 @@ $(document).ready(function(){
 
 
     $('#btnCancel').click(function(){
-        console.log("Fechar");
         remote.BrowserWindow.getFocusedWindow().close();
     });
 
     $('#btnPlus').click(function(){
-        console.log("Maximizar");
-        remote.BrowserWindow.getFocusedWindow().maximize();
+        if(remote.BrowserWindow.getFocusedWindow().isMaximized()){
+            remote.BrowserWindow.getFocusedWindow().unmaximize();
+        }else{
+            remote.BrowserWindow.getFocusedWindow().maximize();
+        }
     }); 
 
     $('#btnMinus').click(function(){
-        console.log("Minimizar");
         remote.BrowserWindow.getFocusedWindow().minimize();
     });
 
